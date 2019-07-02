@@ -1,4 +1,7 @@
-function makeExchange(currency){
+// PLEASE DON'T change function name
+module.exports = function makeExchange(currency) {
+    // Your code goes here!
+    
 	 var coinsType = {H: 50, Q: 25, D: 10, N: 5, P: 1};
 	 var coinsToHands = {};
 	 var errToMuch = {error: "You are rich, my friend! We don't have so much coins for exchange"};
@@ -26,4 +29,7 @@ function makeExchange(currency){
 	 	}	 			
 	
 	return coinsToHands;
+
+    
+    // Return an object containing the minimum number of coins needed to make change
 }
